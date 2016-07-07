@@ -1056,7 +1056,7 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	background-color: #002147;
 }
 
 .site-header > .wrap {
@@ -1088,7 +1088,7 @@ img.alignright,
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
-	color: #222;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -1121,7 +1121,8 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 
 .after-header {
-	border-bottom: 1px solid #ff4800;
+  background: #002147;
+  color: #e6e9ec;
 	margin-bottom: 50px;
 	padding: 70px 0;
 }
@@ -1162,7 +1163,7 @@ img.alignright,
 
 .genesis-nav-menu a {
 	border-bottom: 2px solid transparent;
-	color: #222;
+	color: #fff;
 	display: block;
 	padding: 20px 0;
 	text-decoration: none;
@@ -1363,7 +1364,8 @@ img.alignright,
 --------------------------------------------- */
 
 .front-page-1 {
-	border-bottom: 1px solid #ff4800;
+  background-color: #002147;
+  color: #ccd2da;
 }
 
 .front-page-3,

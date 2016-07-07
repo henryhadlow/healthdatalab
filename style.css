@@ -415,11 +415,9 @@ input[type="submit"],
 	font-family: 'Space Mono', monospaced;
 	font-size: 18px;
 	font-size: 1.8rem;
-	letter-spacing: 1px;
 	line-height: 1;
 	padding: 20px 24px;
 	text-decoration: none;
-	text-transform: uppercase;
 	width: auto;
 }
 
@@ -708,9 +706,7 @@ th {
 	font-family: 'Space Mono', monospaced;
 	font-size: 14px;
 	font-size: 1.4rem;
-	letter-spacing: 2px;
 	margin-bottom: 40px;
-	text-transform: uppercase;
 }
 
 .author-box {
@@ -794,9 +790,7 @@ th {
 	font-family: 'Space Mono', monospaced;
 	font-size: 18px;
 	font-size: 1.8rem;
-	letter-spacing: 2px;
 	margin-bottom: 30px;
-	text-transform: uppercase;
 }
 
 .large-title {
@@ -918,7 +912,6 @@ img.alignright,
 .widget .list li {
 	border-bottom: 1px dotted #ddd;
 	font-family: 'Space Mono', monospaced;
-	text-transform: uppercase;
 }
 
 .widget ol > li {
@@ -1088,10 +1081,8 @@ img.alignright,
 	font-size: 24px;
 	font-size: 2.4rem;
 	font-weight: 300;
-	letter-spacing: 2px;
 	line-height: 1.2;
 	margin-bottom: 0;
-	text-transform: uppercase;
 }
 
 .site-title a,
@@ -1505,9 +1496,7 @@ p.entry-meta {
 .entry-header .entry-meta,
 .featured-content .entry-meta {
 	color: #ff4800;
-	letter-spacing: 2px;
 	margin-bottom: 24px;
-	text-transform: uppercase;
 }
 
 .entry-footer .entry-meta {

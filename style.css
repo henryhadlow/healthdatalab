@@ -890,12 +890,6 @@ img.alignright,
 	margin-bottom: 60px;
 }
 
-.widget-area .widget:last-of-type,
-.widget p:last-child,
-.widget ul > li:last-child {
-	margin-bottom: 0;
-}
-
 .widget li {
 	margin-bottom: 10px;
 	padding-bottom: 10px;

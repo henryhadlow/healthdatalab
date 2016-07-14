@@ -2006,7 +2006,12 @@ p.entry-meta {
 	.site-container .flexible-widgets.widget-full .featuredpost .entry,
 	.site-container .flexible-widgets.widget-uneven .widget,
 	.site-container .flexible-widgets.widget-halves .widget,
-	.site-container .flexible-widgets.widget-thirds .widget {
+	.site-container .flexible-widgets.widget-thirds .widget,
+  .flexible-widgets.widget-full .featuredpost .entry,
+  .flexible-widgets.widget-halves .widget,
+  .flexible-widgets.widget-halves.uneven .featuredpost.widget:last-of-type .entry,
+  .flexible-widgets.widget-uneven .widget:nth-of-type(6n+5),
+  .flexible-widgets.widget-uneven .widget:nth-of-type(6n+6) {
 		float: none;
 		margin: 0 auto 40px;
 		width: 100%;

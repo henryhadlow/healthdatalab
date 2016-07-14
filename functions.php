@@ -44,15 +44,6 @@ add_theme_support( 'genesis-accessibility', array( 'drop-down-menu', 'headings',
 //* Add viewport meta tag for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );
 
-//* Add support for custom header
-add_theme_support( 'custom-header', array(
-	'flex-height'     => true,
-	'width'           => 300,
-	'height'          => 60,
-	'header-selector' => '.site-title a',
-	'header-text'     => false,
-) );
-
 //* Add support for structural wraps
 add_theme_support( 'genesis-structural-wraps', array(
 	'header',

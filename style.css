@@ -1092,19 +1092,15 @@ img.alignright,
 	text-decoration: none;
 }
 
-.header-image .site-title > a {
-	float: left;
-	min-height: 60px;
-	width: 100%;
-}
-
 .site-header .site-description {
 	display: none;
 }
 
-.header-image .site-title {
-	display: block;
-	text-indent: -9999px;
+.front-page .site-title {
+  font-size: 35px;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  padding-bottom: 60px;
 }
 
 /* ## Widget Area

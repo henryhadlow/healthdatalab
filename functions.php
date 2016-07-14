@@ -129,13 +129,6 @@ add_post_type_support( 'page', 'excerpt' );
 add_action( 'genesis_meta', 'workstation_page_description_meta' );
 function workstation_page_description_meta() {
 
-	if ( is_front_page() ) {
-		remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
-		add_action( 'genesis_after_header', 'workstation_open_after_header', 5 );
-		add_action( 'genesis_after_header', 'genesis_seo_site_description', 10 );
-		add_action( 'genesis_after_header', 'workstation_close_after_header', 15 );
-	}
-
 	if ( is_archive() && ! is_post_type_archive() ) {
 		remove_action( 'genesis_before_loop', 'genesis_do_taxonomy_title_description', 15 );
 		add_action( 'genesis_after_header', 'workstation_open_after_header', 5 );

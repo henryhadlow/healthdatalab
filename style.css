@@ -1154,13 +1154,13 @@ img.alignright,
 }
 
 .front-page .after-header {
-  padding-top: 0;
-	margin-bottom: -150px;
+  margin-bottom: 0;
 }
 
 .after-header .archive-description p,
 .after-header .page-description p,
-.after-header .site-description {
+.after-header .site-description,
+.front-page .site-description {
 	clear: both;
   font-family: 'Space Mono', monospaced;
 	font-size: 32px;
@@ -1402,8 +1402,6 @@ img.alignright,
 .front-page-1 {
   background-color: #002147;
   color: #ccd2da;
-  /*font-weight: 700;
-  letter-spacing: 0.02em;*/
 }
 
 .front-page-3,
@@ -1429,7 +1427,15 @@ img.alignright,
 
 .flexible-widgets {
 	overflow: hidden;
-	padding: 100px 0;
+	padding: 50px 0 60px 0;
+}
+
+.front-page-1 .flexible-widgets {
+  padding-top: 0;
+}
+
+.image-section-1 ~ .front-page-1 .flexible-widgets {
+  padding-top: 50px;
 }
 
 .flexible-widgets.widget-full .featuredpost .entry,
@@ -2020,8 +2026,11 @@ p.entry-meta {
 	.after-header .page-description p,
 	.after-header .site-description,
 	.large-title {
-		font-size: 30px;
-		font-size: 3.6rem;
+    font-family: 'Space Mono', monospaced;
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 1.25;
+    max-width: 720px;
 	}
 
 	.flexible-widgets .featured-content .has-post-thumbnail .alignnone + .entry-header {
@@ -2059,7 +2068,8 @@ p.entry-meta {
 
   .after-header .archive-description p,
   .after-header .page-description p,
-  .after-header .site-description {
+  .after-header .site-description,
+  .front-page .site-description {
     font-size: 24px;
     font-size: 2.4rem;
     line-height: 1.25;

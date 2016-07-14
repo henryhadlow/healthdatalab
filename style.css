@@ -1781,7 +1781,7 @@ p.entry-meta {
 		max-width: 100%;
 	}
 
-	.header-image .site-title > a {
+  .site-title > a {
 		background-position: center !important;
 		background-size: contain !important;
 	}

@@ -259,3 +259,10 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Flexible Footer', 'workstation' ),
 	'description' => __( 'This is the footer section.', 'workstation' ),
 ) );
+
+//* Change the footer text
+add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
+function sp_footer_creds_filter( $creds ) {
+  $creds = '[footer_copyright] Health Data Lab';
+  return $creds;
+}

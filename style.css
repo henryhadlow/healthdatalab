@@ -1546,7 +1546,7 @@ img.alignright,
 }
 
 .entry-content code {
-	background-color: #222;
+	background-color: #002147;
 	color: #ddd;
 }
 
@@ -1685,7 +1685,7 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #222;
+	background-color: #002147;
 	clear: both;
 	font-family: 'Space Mono', monospaced;
 	font-size: 16px;

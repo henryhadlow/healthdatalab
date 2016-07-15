@@ -245,9 +245,14 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is the front page 3 section.', 'workstation' ),
 ) );
 genesis_register_sidebar( array(
-	'id'          => 'front-page-4',
-	'name'        => __( 'Front Page 4', 'workstation' ),
-	'description' => __( 'This is the front page 4 section.', 'workstation' ),
+  'id'          => 'front-page-4',
+  'name'        => __( 'Front Page 4', 'workstation' ),
+  'description' => __( 'This is the front page 4 section.', 'workstation' ),
+) );
+genesis_register_sidebar( array(
+  'id'          => 'front-page-5',
+  'name'        => __( 'Front Page 5', 'workstation' ),
+  'description' => __( 'This is the front page 5 section.', 'workstation' ),
 ) );
 genesis_register_sidebar( array(
 	'id'          => 'flex-footer',

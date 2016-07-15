@@ -465,7 +465,17 @@ input:focus[type="submit"],
 .front-page-3 input:focus[type="button"],
 .front-page-3 input:focus[type="reset"],
 .front-page-3 input:focus[type="submit"],
-.front-page-3 .button:focus {
+.front-page-5 .button:focus,
+.front-page-5 button:hover,
+.front-page-5 input:hover[type="button"],
+.front-page-5 input:hover[type="reset"],
+.front-page-5 input:hover[type="submit"],
+.front-page-5 .button:hover,
+.front-page-5 button:focus,
+.front-page-5 input:focus[type="button"],
+.front-page-5 input:focus[type="reset"],
+.front-page-5 input:focus[type="submit"],
+.front-page-5 .button:focus {
 	background-color: #fff;
 	color: #222;
 }
@@ -1399,13 +1409,17 @@ img.alignright,
 }
 
 .front-page-3,
-.front-page-3 a {
-	background-color: #222;
+.front-page-3 a,
+.front-page-5,
+.front-page-5 a {
+	background-color: #002147;
 	color: #fff;
 }
 
 .front-page-3 a:focus,
-.front-page-3 a:hover {
+.front-page-3 a:hover,
+.front-page-5 a:focus,
+.front-page-5 a:hover {
 	color: #ff4800;
 }
 

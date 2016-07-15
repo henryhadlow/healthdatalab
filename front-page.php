@@ -25,7 +25,7 @@ add_action( 'genesis_meta', 'workstation_front_page_genesis_meta' );
  */
 function workstation_front_page_genesis_meta() {
 
-	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) ) {
+	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) || is_active_sidebar( 'front-page-5' ) ) {
 
 		//* Add front-page body class
 		add_filter( 'body_class', 'workstation_body_class' );
@@ -82,6 +82,11 @@ function workstation_front_page_widgets() {
 		'before' => '<div id="front-page-4" class="front-page-4"><div class="flexible-widgets widget-area wrap' . workstation_widget_area_class( 'front-page-4' ) . '">',
 		'after'  => '</div></div>',
 	) );
+
+  genesis_widget_area( 'front-page-5', array(
+    'before' => '<div id="front-page-5" class="front-page-5"><div class="flexible-widgets widget-area wrap' . workstation_widget_area_class( 'front-page-5' ) . '">',
+    'after'  => '</div></div>',
+  ) );
 
   if ( ! empty( $image_section_2 ) ) {
     echo '<div class="image-section-2"></div>';

@@ -1,19 +1,18 @@
-/* # Workstation Pro Theme
-Theme Name: Workstation Pro Theme
-Theme URI: http://my.studiopress.com/themes/workstation/
-Description: Share your vision with the world and showcase your artistic sense with spacious design and beautiful typography.
-Author: StudioPress
-Author URI: http://www.studiopress.com/
+/*
+  Theme Name: Health Data Lab
+  Description: Custom theme for Health Data Lab based on Workstation Pro, by StudioPress
+  Author: Henry Hadlow
+  Author URI: http://www.manofscience.co.uk
 
-Version: 1.0.0
+  Version: 0.1
 
-Template: genesis
-Template Version: 2.2.0
+  Tags: develop, black, orange, white, one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
-Tags: develop, black, orange, white, one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+  Template: genesis
+  Template Version: 2.2
 
-License: GPL-2.0+
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  License: GPL-2.0+
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 
@@ -72,6 +71,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Max-width: 1220px
 	- Max-width: 1040px
 	- Max-width: 880px
+  - Max-width: 600px
 */
 
 
@@ -153,11 +153,11 @@ body > div {
 body {
 	background-color: #fff;
 	color: #222;
-	font-family: 'Baskerville', Garamond, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
-	font-size: 18px;
-	font-size: 1.8rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-size: 2.0rem;
 	font-weight: 300;
-	line-height: 1.625;
+	line-height: 1.5;
 	margin: 0;
 }
 
@@ -191,12 +191,14 @@ a:focus {
 p {
 	margin: 0 0 28px;
 	padding: 0;
+  max-width: 600px;
 }
 
 ol,
 ul {
 	margin: 0;
 	padding: 0;
+  max-width: 600px;
 }
 
 li {
@@ -247,10 +249,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Baskerville', Garamond, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	line-height: 1.2;
 	margin: 0 0 20px;
+  max-width: 720px;
 }
 
 h1 {
@@ -373,7 +376,7 @@ textarea {
 	background-color: #fff;
 	border: 1px solid #ddd;
 	color: #222;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 300;
@@ -413,14 +416,12 @@ input[type="submit"],
 	border: 0;
 	color: #fff;
 	cursor: pointer;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 18px;
-	font-size: 1.8rem;
-	letter-spacing: 1px;
+	font-family: 'Space Mono', monospaced;
+	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 1;
-	padding: 20px 24px;
+	padding: 10px 14px 14px;
 	text-decoration: none;
-	text-transform: uppercase;
 	width: auto;
 }
 
@@ -464,7 +465,17 @@ input:focus[type="submit"],
 .front-page-3 input:focus[type="button"],
 .front-page-3 input:focus[type="reset"],
 .front-page-3 input:focus[type="submit"],
-.front-page-3 .button:focus {
+.front-page-5 .button:focus,
+.front-page-5 button:hover,
+.front-page-5 input:hover[type="button"],
+.front-page-5 input:hover[type="reset"],
+.front-page-5 input:hover[type="submit"],
+.front-page-5 .button:hover,
+.front-page-5 button:focus,
+.front-page-5 input:focus[type="button"],
+.front-page-5 input:focus[type="reset"],
+.front-page-5 input:focus[type="submit"],
+.front-page-5 .button:focus {
 	background-color: #fff;
 	color: #222;
 }
@@ -706,12 +717,10 @@ th {
 --------------------------------------------- */
 
 .breadcrumb {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 	font-size: 14px;
 	font-size: 1.4rem;
-	letter-spacing: 2px;
 	margin-bottom: 40px;
-	text-transform: uppercase;
 }
 
 .author-box {
@@ -792,18 +801,28 @@ th {
 .page-title,
 .widget-title {
 	color: #ff4800;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 	font-size: 18px;
 	font-size: 1.8rem;
-	letter-spacing: 2px;
 	margin-bottom: 30px;
-	text-transform: uppercase;
 }
 
 .large-title {
 	font-size: 48px;
 	font-size: 4.8rem;
 	line-height: 1.2;
+}
+
+.giant-email {
+  font-family: 'Space Mono', monospaced;
+  font-size: 48px;
+  font-size: 4.8rem;
+  line-height: 1.25;
+  max-width: inherit;
+}
+
+.giant-email a {
+  text-decoration: none;
 }
 
 .small-title {
@@ -825,7 +844,6 @@ a.alignnone {
 }
 
 .alignleft {
-	float: left;
 	text-align: left;
 }
 
@@ -894,12 +912,6 @@ img.alignright,
 	margin-bottom: 60px;
 }
 
-.widget-area .widget:last-of-type,
-.widget p:last-child,
-.widget ul > li:last-child {
-	margin-bottom: 0;
-}
-
 .widget li {
 	margin-bottom: 10px;
 	padding-bottom: 10px;
@@ -918,8 +930,7 @@ img.alignright,
 
 .widget .list li {
 	border-bottom: 1px dotted #ddd;
-	font-family: 'Roboto Condensed', sans-serif;
-	text-transform: uppercase;
+	font-family: 'Space Mono', monospaced;
 }
 
 .widget ol > li {
@@ -958,7 +969,7 @@ img.alignright,
 }
 
 .featured-content .entry > a img {
-	margin-bottom: -8px;
+	margin-bottom: 20px;
 }
 
 .featured-content .entry-title {
@@ -1064,11 +1075,15 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	background-color: #002147;
 }
 
 .site-header > .wrap {
-	padding: 60px 0;
+	padding: 30px 0 35px;
+}
+
+.front-page .site-header > .wrap {
+  padding: 40px 0 55px;
 }
 
 /* ## Title Area
@@ -1076,8 +1091,8 @@ img.alignright,
 
 .title-area {
 	float: left;
-	padding: 16px 0;
-	width: 300px;
+	padding: 12px 0;
+	width: 420px;
 }
 
 .header-image .title-area {
@@ -1085,36 +1100,53 @@ img.alignright,
 }
 
 .site-title {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 	font-size: 24px;
 	font-size: 2.4rem;
-	font-weight: 300;
-	letter-spacing: 2px;
+	font-weight: 700;
 	line-height: 1.2;
 	margin-bottom: 0;
-	text-transform: uppercase;
 }
 
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
-	color: #222;
+	color: #fff;
 	text-decoration: none;
-}
+  background-image: url("/wp-content/themes/health-data-lab/images/icon-white-3x.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
 
-.header-image .site-title > a {
-	float: left;
-	min-height: 60px;
-	width: 100%;
+  display: block;
+  height: 48px;
+
+  background-size: 48px;
+  padding: 9px 0 9px 66px;
 }
 
 .site-header .site-description {
 	display: none;
 }
 
-.header-image .site-title {
-	display: block;
-	text-indent: -9999px;
+.front-page .site-title {
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1.25;
+}
+
+.front-page .site-title a,
+.front-page .site-title a:focus,
+.front-page .site-title a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-image: url("/wp-content/themes/health-data-lab/images/icon-white-3x.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+
+  height: 72px;
+
+  background-size: 72px;
+  padding: 16px 0 16px 108px;
 }
 
 /* ## Widget Area
@@ -1123,7 +1155,7 @@ img.alignright,
 .site-header .nav-primary {
 	float: right;
 	text-align: right;
-	width: 840px;
+	width: 740px;
 }
 
 
@@ -1131,22 +1163,25 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 
 .after-header {
-	border-bottom: 1px solid #ff4800;
+  background: #002147;
+  color: #e6e9ec;
 	margin-bottom: 50px;
 	padding: 70px 0;
 }
 
 .front-page .after-header {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .after-header .archive-description p,
 .after-header .page-description p,
-.after-header .site-description {
+.after-header .site-description,
+.front-page .site-description {
 	clear: both;
-	font-size: 48px;
-	font-size: 4.8rem;
-	line-height: 1.2;
+  font-family: 'Space Mono', monospaced;
+	font-size: 32px;
+	font-size: 3.2rem;
+	line-height: 1.25;
 	max-width: 720px;
 }
 
@@ -1158,6 +1193,11 @@ img.alignright,
 	clear: both;
 	line-height: 1;
 	width: 100%;
+  padding-top: 10px;
+}
+
+.front-page .genesis-nav-menu {
+  padding-top: 26px;
 }
 
 .genesis-nav-menu .menu-item {
@@ -1169,9 +1209,13 @@ img.alignright,
 	margin: 0 24px;
 }
 
+.genesis-nav-menu > .menu-item:last-child {
+  margin-right: 0;
+}
+
 .genesis-nav-menu a {
 	border-bottom: 2px solid transparent;
-	color: #222;
+	color: #fff;
 	display: block;
 	padding: 20px 0;
 	text-decoration: none;
@@ -1182,7 +1226,7 @@ img.alignright,
 	border-color: transparent;
 }
 
-.genesis-nav-menu > .current-menu-item > a,
+/*.genesis-nav-menu > .current-menu-item > a,*/
 .genesis-nav-menu > li > a:focus,
 .genesis-nav-menu > li > a:hover {
 	border-bottom: 2px solid #ff4800;
@@ -1288,7 +1332,7 @@ img.alignright,
 
 .nav-secondary {
 	background-color: #222;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 }
 
 .nav-secondary .genesis-nav-menu a {
@@ -1372,17 +1416,22 @@ img.alignright,
 --------------------------------------------- */
 
 .front-page-1 {
-	border-bottom: 1px solid #ff4800;
+  background-color: #002147;
+  color: #ccd2da;
 }
 
 .front-page-3,
-.front-page-3 a {
-	background-color: #222;
+.front-page-3 a,
+.front-page-5,
+.front-page-5 a {
+	background-color: #002147;
 	color: #fff;
 }
 
 .front-page-3 a:focus,
-.front-page-3 a:hover {
+.front-page-3 a:hover,
+.front-page-5 a:focus,
+.front-page-5 a:hover {
 	color: #ff4800;
 }
 
@@ -1398,7 +1447,15 @@ img.alignright,
 
 .flexible-widgets {
 	overflow: hidden;
-	padding: 100px 0;
+	padding: 50px 0 60px 0;
+}
+
+.front-page-1 .flexible-widgets {
+  padding-top: 0;
+}
+
+.image-section-1 ~ .front-page-1 .flexible-widgets {
+  padding-top: 50px;
 }
 
 .flexible-widgets.widget-full .featuredpost .entry,
@@ -1489,7 +1546,7 @@ img.alignright,
 }
 
 .entry-content code {
-	background-color: #222;
+	background-color: #002147;
 	color: #ddd;
 }
 
@@ -1497,7 +1554,7 @@ img.alignright,
 --------------------------------------------- */
 
 p.entry-meta {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 	font-size: 16px;
 	font-size: 1.6rem;
 	margin-bottom: 0;
@@ -1506,9 +1563,7 @@ p.entry-meta {
 .entry-header .entry-meta,
 .featured-content .entry-meta {
 	color: #ff4800;
-	letter-spacing: 2px;
 	margin-bottom: 24px;
-	text-transform: uppercase;
 }
 
 .entry-footer .entry-meta {
@@ -1550,7 +1605,7 @@ p.entry-meta {
 }
 
 .archive-pagination li a {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 	color: #222;
 	cursor: pointer;
 	display: inline-block;
@@ -1600,7 +1655,7 @@ p.entry-meta {
 .comment-meta,
 .entry-comments .comment-header,
 .entry-comments .comment-reply {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 	font-weight: 300;
 }
 
@@ -1630,9 +1685,9 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #222;
+	background-color: #002147;
 	clear: both;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 300;
@@ -1670,7 +1725,7 @@ p.entry-meta {
 .site-footer {
 	background-color: #222;
 	color: #fff;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Space Mono', monospaced;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 300;
@@ -1705,7 +1760,7 @@ p.entry-meta {
 
 	.content,
 	.site-header .nav-primary {
-		width: 780px;
+		width: 660px;
 	}
 
 }
@@ -1719,7 +1774,7 @@ p.entry-meta {
 
 	.content,
 	.site-header .nav-primary {
-		width: 600px;
+		width: 480px;
 	}
 
 	.image-section-1,
@@ -1743,8 +1798,12 @@ p.entry-meta {
 	}
 
 	.site-header .nav-primary {
-		width: 500px;
+		width: 380px;
 	}
+
+  .genesis-nav-menu > .menu-item {
+    margin: 0 12px;
+  }
 
 }
 
@@ -1780,7 +1839,7 @@ p.entry-meta {
 
 	.title-area {
 		margin-top: 20px;
-		padding: 16px;
+		padding: 16px 0;
 	}
 
 	.site-header .nav-primary {
@@ -1789,15 +1848,18 @@ p.entry-meta {
 		padding-bottom: 20px;
 	}
 
-	.site-header > .wrap {
+  .site-header > .wrap,
+	.front-page .site-header > .wrap {
 		padding: 0;
 		max-width: 100%;
 	}
 
-	.header-image .site-title > a {
-		background-position: center !important;
-		background-size: contain !important;
-	}
+  .site-header > .wrap .site-title,
+  .front-page .site-header > .wrap .site-title {
+    max-width: 600px;
+    padding: 20px 5% 35px;
+    margin: 0 auto;
+  }
 
 	.genesis-nav-menu li,
 	.site-header ul.genesis-nav-menu,
@@ -1806,9 +1868,7 @@ p.entry-meta {
 	}
 
 	.genesis-nav-menu,
-	.site-header .title-area,
-	.site-header .search-form,
-	.site-title {
+	.site-header .search-form {
 		text-align: center;
 	}
 
@@ -1903,7 +1963,7 @@ p.entry-meta {
 	.js .genesis-nav-menu .menu-item a {
 		border: none;
 		color: #fff;
-		font-family: 'Roboto Condensed', sans-serif;
+		font-family: 'Space Mono', monospaced;
 		padding: 20px;
 		width: 100%;
 	}
@@ -1966,7 +2026,12 @@ p.entry-meta {
 	.site-container .flexible-widgets.widget-full .featuredpost .entry,
 	.site-container .flexible-widgets.widget-uneven .widget,
 	.site-container .flexible-widgets.widget-halves .widget,
-	.site-container .flexible-widgets.widget-thirds .widget {
+	.site-container .flexible-widgets.widget-thirds .widget,
+  .flexible-widgets.widget-full .featuredpost .entry,
+  .flexible-widgets.widget-halves .widget,
+  .flexible-widgets.widget-halves.uneven .featuredpost.widget:last-of-type .entry,
+  .flexible-widgets.widget-uneven .widget:nth-of-type(6n+5),
+  .flexible-widgets.widget-uneven .widget:nth-of-type(6n+6) {
 		float: none;
 		margin: 0 auto 40px;
 		width: 100%;
@@ -1986,9 +2051,17 @@ p.entry-meta {
 	.after-header .page-description p,
 	.after-header .site-description,
 	.large-title {
-		font-size: 30px;
-		font-size: 3.6rem;
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 1.25;
+    max-width: 720px;
 	}
+
+  .giant-email {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 1.25;
+  }
 
 	.flexible-widgets .featured-content .has-post-thumbnail .alignnone + .entry-header {
 		padding: 20px;
@@ -1997,5 +2070,39 @@ p.entry-meta {
 	.archive-pagination li a {
 		margin-bottom: 4px;
 	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .site-header > .wrap .site-title,
+  .front-page .site-header > .wrap .site-title {
+    max-width: 600px;
+    padding: 0 5% 20px;
+    margin: 0 auto;
+  }
+
+  .front-page .site-title {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.25;
+  }
+
+  .front-page .site-title a,
+  .front-page .site-title a:focus,
+  .front-page .site-title a:hover {
+    height: 48px;
+    background-size: 48px;
+    padding: 9px 0 9px 66px;
+  }
+
+  .after-header .archive-description p,
+  .after-header .page-description p,
+  .after-header .site-description,
+  .front-page .site-description {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.25;
+  }
 
 }

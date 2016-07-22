@@ -16,7 +16,7 @@ Contact henry@manofscience.co.uk for help and support using this theme
 
 Configure the site identity like this:
 
-![Screenshot showing how to configure the site identity](/images/screenshots/identity.png | width=300)
+<img alt="Screenshot showing how to configure the site identity" src="/images/screenshots/identity.png" width="300" />
 
 ## Front page configuration
 
@@ -26,39 +26,39 @@ The front page is configured using widgets.
 
 Configure the first widget area like this:
 
-![Screenshot showing how to configure the first widget area](/images/screenshots/widgets-1.png | width=300)
+<img alt="Screenshot showing how to configure the first widget area" src="/images/screenshots/widgets-1.png" width="300" />
 
 ### Widget area headers
 
 Configure the headers on the second, third and fourth widget areas like this:
 
-![Screenshot showing how to configure the headers on the widget areas](/images/screenshots/widgets-headers.png | width=300)
+<img alt="Screenshot showing how to configure the headers on the widget areas" src="/images/screenshots/widgets-headers.png" width="300" />
 
 ### Second widget area
 
-![Screenshot showing how to configure the second widget area](/images/screenshots/widgets-2.png | width=300)
+<img alt="Screenshot showing how to configure the second widget area" src="/images/screenshots/widgets-2.png" width="300" />
 
 ### Third widget area
 
-![Screenshot showing how to configure the third widget area](/images/screenshots/widgets-3.png | width=300)
+<img alt="Screenshot showing how to configure the third widget area" src="/images/screenshots/widgets-3.png" width="300" />
 
 ### Fourth widget area
 
-![Screenshot showing how to configure the fourth widget area](/images/screenshots/widgets-4.png | width=866)
+<img alt="Screenshot showing how to configure the fourth widget area" src="/images/screenshots/widgets-4.png" width="866" />
 
 ### Fifth widget area
 
-![Screenshot showing how to configure the fifth widget area](/images/screenshots/widgets-5.png | width=300)
+<img alt="Screenshot showing how to configure the fifth widget area" src="/images/screenshots/widgets-5.png" width="300" />
 
 ### Footer widget area
 
-![Screenshot showing how to configure the footer](/images/screenshots/footer.png | width=300)
+<img alt="Screenshot showing how to configure the footer" src="/images/screenshots/footer.png" width="300" />
 
 ## Menu configuration
 
 To configure the menu, set up each menu item like this:
 
-![Screenshot showing how to configure the menu](/images/screenshots/menu.png | width=300)
+<img alt="Screenshot showing how to configure the menu" src="/images/screenshots/menu.png" width="300" />
 
 ## Localization
 

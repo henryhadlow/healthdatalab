@@ -59,14 +59,14 @@ function workstation_front_page_widgets() {
 
 	$image_section_2 = get_option( '2-workstation-image', sprintf( '%s/images/bg-2.jpg', get_stylesheet_directory_uri() ) );
 
-	if ( ! empty( $image_section_1 ) ) {
-		echo '<div class="image-section-1"></div>';
-	}
-
 	genesis_widget_area( 'front-page-1', array(
 		'before' => '<div id="front-page-1" class="front-page-1"><div class="flexible-widgets widget-area wrap' . workstation_widget_area_class( 'front-page-1' ) . '">',
 		'after'  => '</div></div>',
 	) );
+
+  if ( ! empty( $image_section_1 ) ) {
+    echo '<div class="image-section-1"></div>';
+  }
 
 	genesis_widget_area( 'front-page-2', array(
 		'before' => '<div id="front-page-2" class="front-page-2"><div class="flexible-widgets widget-area wrap' . workstation_widget_area_class( 'front-page-2' ) . '">',

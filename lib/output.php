@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * Adds the required CSS to the front end.
  */
 
@@ -75,7 +75,7 @@ function workstation_css() {
 		input[type="submit"],
 		.add-color .after-header,
 		.add-color .site-header,
-		.button,		
+		.button,
 		.widget .button {
 			background-color: %1$s;
 		}
@@ -83,12 +83,11 @@ function workstation_css() {
 		.after-header,
 		.front-page-1,
 		.genesis-nav-menu .sub-menu,
-		.genesis-nav-menu > .current-menu-item > a,
 		.genesis-nav-menu > li > a:focus,
 		.genesis-nav-menu > li > a:hover {
 			border-color: %1$s;
 		}
-		
+
 		@media only screen and (max-width: 880px) {
 			.js nav .genesis-nav-menu .menu-item .sub-menu li a:focus,
 			.js nav .genesis-nav-menu .menu-item a:focus,

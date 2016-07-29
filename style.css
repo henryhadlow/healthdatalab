@@ -815,9 +815,9 @@ th {
 
 .giant-email {
   font-family: 'Space Mono', monospaced;
-  font-size: 48px;
-  font-size: 4.8rem;
-  line-height: 1.25;
+  font-size: 42px;
+  font-size: 4.2rem;
+  line-height: 1.071428571;
   max-width: inherit;
 }
 

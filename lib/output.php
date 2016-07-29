@@ -55,6 +55,8 @@ function workstation_css() {
 		.footer-widgets a:hover,
 		.front-page-3 a:focus,
 		.front-page-3 a:hover,
+    .front-page-5 a:focus,
+    .front-page-5 a:hover,
 		.genesis-nav-menu .sub-menu a:focus,
 		.genesis-nav-menu .sub-menu a:hover,
 		.nav-secondary .genesis-nav-menu .sub-menu a:focus,
